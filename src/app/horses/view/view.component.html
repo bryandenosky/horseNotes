@@ -1,0 +1,5 @@
+<section class="view" *ngIf="currentHorse">
+	<horse-profile [horse]="currentHorse" class="context--view"></horse-profile>
+	<pre class="view__description">{{currentHorse.description}}</pre>
+	<a *ngIf="currentHorse.id" class="view__edit button" [routerLink]="['/horses/edit', currentHorse.id]">Edit</a>
+</section>

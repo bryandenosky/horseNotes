@@ -1,0 +1,18 @@
+.edit {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.edit__element {
+	box-sizing: border-box;
+	margin-bottom: .5rem;
+	min-width: 300px;
+	padding: .5rem;
+	width: 100%;
+}
+
+.edit__description {
+	font-family: sans-serif;
+	min-height: 10rem;
+}

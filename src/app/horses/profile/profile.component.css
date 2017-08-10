@@ -1,0 +1,38 @@
+.horses__container {
+	align-items: center;
+	display: flex;
+	margin: 0;
+}
+
+:host-context(.context--nav) .horses__picture {
+	border-radius: 20px;
+	height: 40px;
+	width: 40px;
+}
+
+:host-context(.context--view) .horses__picture {
+	border: 3px solid #333;
+	border-radius: 5px;
+	height: 137px;
+	width: 220px;
+}
+
+.horses__name {
+	flex: 1 1 auto;
+}
+
+:host-context(.context--nav) .horses__name {
+	font-size: .75rem;
+	padding-left: 10px;
+}
+
+:host-context(.context--view) .horses__name {
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: normal;
+	padding-left: 2rem;
+}
+
+.horses__view {
+	flex: 1 1 auto;
+}

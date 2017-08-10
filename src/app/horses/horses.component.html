@@ -1,0 +1,14 @@
+<section class="horses">
+	<nav class="horses__nav">
+		<ul class="horses__list">
+			<li class="horses__item" *ngFor="let horse of horseList">
+				<a [routerLink]="['/horses/', horse.id]" class="horses__link" [class.horses__link--active]="currentHorse && horse.id == currentHorse.id" (click)="updateHorse(horse)">
+					<horse-profile [horse]="horse" class="context--nav"></horse-profile>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<section class="horses__view">
+		<router-outlet></router-outlet>
+	</section>
+</section>

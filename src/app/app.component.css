@@ -1,0 +1,37 @@
+.app {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.header {
+	background-color: #227;
+	box-sizing: border-box;
+	padding: 10px;
+	position: relative;
+}
+
+.header__title {
+	color: #fff;
+	font-size: 2rem;
+	line-height: normal;
+	margin: 0;
+	text-align: center;
+}
+
+.header__button {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.header__button:hover {
+	background-color: #16ab39;
+}
+
+.main {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+}

@@ -1,0 +1,6 @@
+<ul class="edit" *ngIf="currentHorse">
+	<li><input class="edit__name edit__element" name="name" type="text" placeholder="Name" [(ngModel)]="currentHorse.name"></li>
+	<li><input class="edit__picture edit__element" name="picture" type="text" placeholder="Picture URL" [(ngModel)]="currentHorse.picture"></li>
+	<li><textarea class="edit__description edit__element" name="description" placeholder="Description" [(ngModel)]="currentHorse.description"></textarea></li>
+	<li><a class="edit__save button" (click)="onSubmit()">Save</a></li>
+</ul>
